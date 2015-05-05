@@ -1,5 +1,9 @@
 <?php
-  $cfg['blowfish_secret'] = 'ba17c1ec07d65003';
+  <% if @PmaAbsoluteUri %>
+  $cfg['PmaAbsoluteUri']  = '<%= @PmaAbsoluteUri %>';
+  <% end %>
+  
+  $cfg['blowfish_secret'] = '<%= @blowfish_secret %>';
 
   $i=0;
 
